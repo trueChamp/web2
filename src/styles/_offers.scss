@@ -1,0 +1,262 @@
+.offers__caption {
+    @include cap;
+    margin-bottom: $margin-cap;
+}
+
+.offers__top {
+    position: relative;
+}
+
+.offers__swiper {
+    min-height: 511px;
+}
+
+.offers__grid {
+    display: grid;
+    grid-template-columns: 296px 1fr 1fr 296px;
+    gap: 32px;
+}
+
+.offers__item {
+    background: $basic-color;
+    position: relative;
+    border-radius: 10px;
+    min-height: 511px;
+    padding-top: 298px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.of-item1 {
+    background-position: top 72px center;
+    background-image: url(../img/offer_card1.png);
+    background-repeat: no-repeat;
+}
+
+.of-item2 {
+    grid-column: 2 / 4;
+    background-position: top 37px center, bottom 30px right 30px;
+    background-image: url(../img/offer_card2.png), url(../img/cont_offer_card2.png);
+    background-repeat: no-repeat;
+}
+
+.of-item3 {
+    background-position: top 64px center;
+    background-image: url(../img/offer_card3.png);
+    background-repeat: no-repeat;
+}
+
+.of-item4 {
+    background-position: top 64px center;
+    background-image: url(../img/offer_card4.png);
+    background-repeat: no-repeat;
+}
+
+.of-item5 {
+    grid-column: 2 / 4;
+    background-position: top 37px center, bottom 30px right 30px;
+    background-image: url(../img/offer_card5.png), url(../img/cont_offer_card5.png);
+    background-repeat: no-repeat;
+}
+
+.of-item6 {
+    background-position: top 64px center;
+    background-image: url(../img/offer_card6.png);
+    background-repeat: no-repeat;
+}
+
+.offers__sale {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.of-item1::after {
+    @include sale;
+    content: '- 9 000';
+}
+
+.of-item2::after {
+    @include sale;
+    content: '- 10 000';
+    left: 15px;
+}
+
+.of-item3::after {
+    @include sale;
+    content: '- 600';
+    left: 25px;
+}
+
+.of-item4::after {
+    @include sale;
+    content: '- 300';
+}
+
+.of-item5::after {
+    @include sale;
+    content: '- 10 000';
+}
+
+.of-item6::after {
+    @include sale;
+    content: '- 700';
+}
+
+.offers__name {
+    @include product;
+    max-width: 225px;
+    margin-bottom: 22px;
+}
+
+.offers__name5 {
+    max-width: 222px;
+}
+
+.offers__price {
+    position: relative;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FF862F;
+    margin-bottom: 22px;
+}
+
+.offers__price1::after {
+    @include price;
+    content: '24 990 руб';
+}
+
+.offers__price2::after {
+    @include price;
+    content: '32 990 руб';
+}
+
+.offers__price3::after {
+    @include price;
+    content: '1 890 руб';
+}
+
+.offers__price4::after {
+    @include price;
+    content: '990 руб';
+}
+
+.offers__price5::after {
+    @include price;
+    content: '32 990 руб';
+}
+
+.offers__price6::after {
+    @include price;
+    content: '2 090 руб';
+}
+
+.offers__btn {
+    @include btn2;
+}
+
+.offers-button-next,
+.offers-button-next2 {
+    position: absolute;
+}
+
+.offers-button-prev,
+.offers-button-prev2 {
+    right: 40px;
+    left: auto;
+}
+
+.offers-button-next,
+.offers-button-next2 {
+    right: 0;
+}
+
+.offers {
+    margin-bottom: $margin-sec;
+}
+
+.offers__swiper2 {
+    display: none;
+}
+
+.offers__button600 {
+    display: none;
+}
+
+.offers-button-next2,
+.offers-button-prev2 {
+    display: none;
+}
+
+.arrow320 {
+    display: none;
+}
+
+@media (max-width: 1250px) {
+    .of-item2 {
+        background-image: url(../img/1024/offer_card2.png);
+        background-position: top 112px center;
+    }
+    .of-item5 {
+        background-image: url(../img/1024/offer_card5.png);
+        background-position: top 120px center;
+    }
+}
+
+@media (max-width: 1023px) {
+    .offers__swiper,
+    .offers-button-prev,
+    .offers-button-next {
+        display: none;
+    }
+    .offers__swiper2 {
+        display: block;
+    }
+    .offers-button-next2,
+    .offers-button-prev2 {
+        display: block;
+    }
+    .arrow320 {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .offers-button-prev,
+    .offers-button-prev2 {
+        right: 45px;
+        left: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .offers {
+        position: relative;
+        margin-bottom: 120px;
+    }
+    .offers__button768 {
+        display: none
+    }
+    .offers__swiper-con {
+        position: relative;
+    }
+    .offers-button-prev2 {
+        width: 32px;
+        height: 32px;
+        right: 52%;
+        top: 548px;
+    }
+    .offers-button-next2 {
+        left: 52%;
+        width: 32px;
+        height: 32px;
+        top: 548px;
+    }
+    .offers__caption {
+        @include cap600;
+    }
+    .arrow320 {
+        display: block;
+    }
+}

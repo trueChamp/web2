@@ -1,0 +1,297 @@
+.high-rating__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.high-rating__item {
+    min-height: 420px;
+    background: $basic-color;
+    border-radius: 10px;
+}
+
+.high-rating__caption {
+    @include cap;
+    margin-bottom: $margin-cap;
+}
+
+.high-rating__item {
+    padding-top: 207px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.high-rating__card1 {
+    background-image: url(../img/hr1.png);
+    background-repeat: no-repeat;
+    background-position: top 109px center;
+}
+
+.high-rating__card2 {
+    background-image: url(../img/hr2.png);
+    background-repeat: no-repeat;
+    background-position: top 90px center;
+}
+
+.high-rating__card3 {
+    background-image: url(../img/hr3.png);
+    background-repeat: no-repeat;
+    background-position: top 88px center;
+}
+
+.high-rating__card4 {
+    background-image: url(../img/hr4.png);
+    background-repeat: no-repeat;
+    background-position: top 66px center;
+}
+
+.high-rating__card5 {
+    background-image: url(../img/hr5.png);
+    background-repeat: no-repeat;
+    background-position: top 74px center;
+}
+
+.high-rating__card6 {
+    background-image: url(../img/hr6.png);
+    background-repeat: no-repeat;
+    background-position: top 74px center;
+}
+
+.high-rating__card7 {
+    background-image: url(../img/hr7.png);
+    background-repeat: no-repeat;
+    background-position: top 61px center;
+}
+
+.high-rating__card8 {
+    background-image: url(../img/hr8.png);
+    background-repeat: no-repeat;
+    background-position: top 67px center;
+}
+
+.high-rating__cap {
+    @include product;
+    max-width: 218px;
+    margin-bottom: 24px;
+    word-break: break-all;
+}
+
+.high-rating__cap2 {
+    max-width: 236px;
+}
+
+.high-rating__cap7 {
+    max-width: 229px;
+}
+
+.high-rating__price {
+    @include price-hr;
+    margin-bottom: 24px;
+}
+
+.high-rating__btn {
+    @include btn2;
+}
+
+.high-rating__star {
+    @include star;
+}
+
+.high-rating__card1::after {
+    @include points;
+    content: '5,0';
+}
+
+.high-rating__card2::after {
+    @include points;
+    content: '4,9';
+}
+
+.high-rating__card3::after {
+    @include points;
+    content: '4,8';
+}
+
+.high-rating__card4::after {
+    @include points;
+    content: '4,8';
+}
+
+.high-rating__card5::after {
+    @include points;
+    content: '4,8';
+}
+
+.high-rating__card6::after {
+    @include points;
+    content: '4,8';
+}
+
+.high-rating__card7::after {
+    @include points;
+    content: '5,0';
+}
+
+.high-rating__card8::after {
+    @include points;
+    content: '5,0';
+}
+
+.high-rating__more {
+    @include btn;
+    padding-left: 36.5px;
+    padding-right: 36.5px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.high-rating {
+    margin-bottom: $margin-sec;
+}
+
+#more {
+    display: none;
+}
+
+@media (max-width: 1250px) {
+    .high-rating__cap {
+        max-width: 218px;
+    }
+    .high-rating__cap2 {
+        max-width: 236px;
+    }
+    .high-rating__card7,
+    .high-rating__card8 {
+        display: none;
+    }
+    .high-rating__grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .high-rating__card1 {
+        background-size: 266px auto;
+    }
+    .high-rating__card2 {
+        background-size: 261px auto;
+    }
+    .high-rating__card3 {
+        background-size: 262px auto;
+    }
+    .high-rating__card4 {
+        background-size: 257px auto;
+    }
+    .high-rating__card5 {
+        background-size: 265px auto;
+    }
+    .high-rating__card6 {
+        background-size: 271px auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .high-rating__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .high-rating__card4-more {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .high-rating__item {
+        min-height: 278px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 130px;
+        padding-bottom: 16px;
+    }
+    .high-rating__grid {
+        gap: 16px;
+        grid-template-rows: minmax(278px, 1fr);
+    }
+    .high-rating__card1 {
+        background-size: 145px auto;
+        background-position: top 53px center;
+    }
+    .high-rating__card2 {
+        background-size: 145px auto;
+        background-position: top 48px center;
+    }
+    .high-rating__card3 {
+        background-size: 145px auto;
+        background-position: top 48px center;
+    }
+    .high-rating__card4 {
+        background-size: 145px auto;
+        background-position: top 43px center;
+    }
+    .high-rating__card5 {
+        background-size: 145px auto;
+        background-position: top 45px center;
+    }
+    .high-rating__card6 {
+        background-size: 145px auto;
+        background-position: top 46px center;
+    }
+    .high-rating__cap {
+        @include product600;
+        margin-bottom: 6px;
+        word-break: break-word;
+    }
+    .high-rating__price {
+        margin-bottom: 16px;
+    }
+    .high-rating__btn {
+        @include btn2-600;
+        position: relative;
+    }
+    .high-rating__caption {
+        @include cap600;
+    }
+    .high-rating__star {
+        top: 18px;
+        left: 16px;
+        width: 13px;
+        height: 12px;
+    }
+    .high-rating__card1::after,
+    .high-rating__card2::after,
+    .high-rating__card3::after,
+    .high-rating__card4::after,
+    .high-rating__card5::after,
+    .high-rating__card6::after {
+        @include points600;
+    }
+}
+
+@media (max-width: 390px) {
+    .high-rating__card1 {
+        background-size: 108px auto;
+    }
+    .high-rating__card2 {
+        background-size: 108px auto;
+    }
+    .high-rating__card3 {
+        background-size: 108px auto;
+    }
+    .high-rating__card4 {
+        background-size: 108px auto;
+    }
+    .high-rating__card5 {
+        background-size: 108px auto;
+    }
+    .high-rating__card6 {
+        background-size: 108px auto;
+    }
+    .high-rating__cap {
+        margin-bottom: 16px;
+        max-width: 96px;
+    }
+    .high-rating__price {
+        margin-bottom: 16px;
+    }
+    .high-rating__item {
+        padding-top: 106px;
+    }
+}

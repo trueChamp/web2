@@ -1,0 +1,207 @@
+@mixin btn {
+    background: #A65CF0;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    padding: 22px 0;
+}
+
+@mixin btn2 {
+    background: transparent;
+    border: 2px solid #A65CF0;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #A65CF0;
+    width: 128px;
+    height: 54px;
+    padding: 0;
+}
+
+@mixin hero-text {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #999999;
+}
+
+@mixin cap {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    color: #333333;
+}
+
+@mixin product {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #333333;
+}
+
+@mixin sale {
+    position: absolute;
+    top: 37px;
+    left: 19px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@mixin price {
+    position: absolute;
+    top: 2px;
+    left: 122px;
+    text-decoration: line-through;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    text-decoration-line: line-through;
+    color: #999999;
+}
+
+@mixin price-hr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #666666;
+}
+
+@mixin star {
+    position: absolute;
+    top: 33px;
+    left: 30px;
+}
+
+@mixin points {
+    position: absolute;
+    top: 30px;
+    left: 52.4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FF862F;
+}
+
+@mixin category {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #999999;
+}
+
+@mixin link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: #A65CF0;
+}
+
+@mixin us-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333333;
+}
+
+@mixin cap2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #333333;
+}
+
+@mixin coop-cap {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333333;
+}
+
+@mixin coop-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: #666666;
+}
+
+// 600px
+@mixin hero-text600 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #999999;
+}
+
+@mixin cap600 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: #333333;
+}
+
+@mixin product600 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    color: #333333;
+}
+
+@mixin btn2-600 {
+    background: transparent;
+    border: 2px solid #A65CF0;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #A65CF0;
+    width: 108px;
+    height: 40px;
+    padding: 0;
+}
+
+@mixin btn600 {
+    background: #A65CF0;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    width: 296px;
+    height: 60px;
+}
+
+@mixin points600 {
+    position: absolute;
+    top: 18px;
+    left: 35.4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #FF862F;
+}
+
+@mixin coop-text600 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: #666666;
+}
+
+@mixin coop-cap600 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+}

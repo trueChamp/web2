@@ -1,0 +1,179 @@
+.useful__swiper {
+    min-height: 676px;
+}
+
+.useful__slide {
+    background: $basic-color;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.useful__caption {
+    @include cap;
+    margin-bottom: $margin-cap;
+}
+
+.useful__img1 {
+    background-image: url(../img/us1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 426px;
+}
+
+.useful__img2 {
+    background-image: url(../img/us2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 426px;
+}
+
+.useful__img3 {
+    background-image: url(../img/us3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 426px;
+}
+
+.useful__img4 {
+    background-image: url(../img/us4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 426px;
+}
+
+.useful__img5 {
+    background-image: url(../img/us5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 426px;
+}
+
+.useful__text {
+    @include us-text;
+    max-width: 576px;
+    margin-bottom: auto;
+}
+
+.useful__text4 {
+    max-width: 553px;
+}
+
+.useful__btn {
+    @include btn2;
+}
+
+.useful__top {
+    position: relative;
+}
+
+.useful-button-next {
+    position: absolute;
+}
+
+.useful-button-prev {
+    right: 40px;
+    left: auto;
+}
+
+.useful-button-next {
+    right: 0;
+}
+
+.useful {
+    margin-bottom: $margin-sec;
+}
+
+.useful__inside {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-height: 250px;
+    padding-left: 30px;
+}
+
+.useful__back {
+    height: 426px;
+}
+
+@media (max-width: 1250px) {
+    .useful__swiper {
+        min-height: 456px;
+    }
+    .useful__img1 {
+        background-image: url(../img/1024/us1.jpg);
+        background-size: cover;
+        height: 202px;
+    }
+    .useful__img2 {
+        background-image: url(../img/1024/us2.jpg);
+        background-size: cover;
+        height: 202px;
+    }
+    .useful__img3 {
+        background-image: url(../img/1024/us3.jpg);
+        background-size: cover;
+        height: 202px;
+    }
+    .useful__img4 {
+        background-image: url(../img/1024/us4.jpg);
+        background-size: cover;
+        height: 202px;
+    }
+    .useful__img5 {
+        background-image: url(../img/1024/us5.jpg);
+        background-size: cover;
+        height: 202px;
+    }
+    .useful__inside {
+        min-height: 254px;
+    }
+    .useful__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 236px;
+    }
+}
+
+@media (max-width: 900px) {
+    .useful__text {
+        max-width: 228px;
+    }
+    .useful-button-prev {
+        right: 45px;
+    }
+}
+
+@media (max-width: 600px) {
+    .useful__caption {
+        @include cap600;
+    }
+    .useful-button-prev {
+        right: 154px;
+        left: auto;
+        top: 544px;
+        height: 32px;
+        width: 32px;
+    }
+    .useful-button-next {
+        top: 544px;
+        right: 109px;
+        height: 32px;
+        width: 32px;
+    }
+    .useful {
+        margin-bottom: 119px;
+    }
+    .useful__text {
+        max-width: max-content;
+        width: auto;
+    }
+}
+
+@media (max-width: 390px) {
+    .useful__text {
+        max-width: 236px;
+    }
+}

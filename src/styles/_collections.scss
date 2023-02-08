@@ -1,0 +1,115 @@
+.collections {
+    min-height: 600px;
+    background-image: url(../img/collectionsFon.jpg);
+    padding-top: 154px;
+    margin-bottom: $margin-sec;
+}
+
+.collections__container {
+    max-width: 1352px;
+    padding: 0 36px;
+    margin: 0 auto;
+}
+
+.collections__caption {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 120%;
+    color: #D5B986;
+    margin-bottom: 2px;
+}
+
+.collections__text {
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 508px;
+    margin-bottom: 52px;
+}
+
+.collections__btn {
+    @include btn;
+    padding-left: 31.5px;
+    padding-right: 31.5px;
+}
+
+.main__btn320 {
+    display: none;
+}
+
+.main__btn__container {
+    display: none;
+}
+
+@media (max-width: 1250px) {
+    .collections {
+        background-image: url(../img/1024/collectionsFon.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 900px) {
+    .collections {
+        background-image: url(../img/768/collectionsFon.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 600px) {
+    .collections {
+        display: flex;
+        align-items: center;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 390px) {
+    .collections {
+        background-image: url(../img/320/collectionsFon.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+    }
+    .collections {
+        height: 210px;
+        padding-top: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 32px;
+    }
+    .collections__caption {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 120%;
+        color: #D5B986;
+    }
+    .collections__text {
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        max-width: 187px;
+        margin-bottom: 49px;
+    }
+    .collections__container {
+        max-width: 648px;
+        margin: 0 auto;
+        padding: 0 12px;
+        margin-bottom: 70px;
+    }
+    .collections__btn {
+        display: none;
+    }
+    .main__btn320 {
+        display: block;
+        @include btn600;
+    }
+    .main__btn__container {
+        display: flex;
+    }
+}

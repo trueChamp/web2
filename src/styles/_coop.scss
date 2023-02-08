@@ -1,0 +1,139 @@
+.coop__caption {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    color: #333333;
+    margin-bottom: 32px;
+}
+
+.coop__cap {
+    @include coop-cap;
+    margin-bottom: 12px;
+}
+
+.coop__text {
+    @include coop-text;
+}
+
+.coop__chap {
+    margin-bottom: 32px;
+    max-width: 843px;
+}
+
+.coop_chap2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    max-width: 624px;
+}
+
+.coop__add,
+.coop__guarantee {
+    display: flex;
+}
+
+.coop__add {
+    max-width: 615px;
+    line-height: 150%;
+}
+
+.coop__poss {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FF862F;
+    margin-bottom: 12px;
+}
+
+.coop__guarantee-numb {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FF862F;
+    margin-right: 12px;
+}
+
+.coop__add-svg {
+    margin-right: 12px;
+}
+
+.coop__text-poss {
+    margin-bottom: 12px;
+}
+
+.coop__text-guarantee,
+.coop__text-add {
+    margin-bottom: 12px;
+}
+
+.coop__img {
+    margin-right: 32px;
+}
+
+.coop__text-set {
+    max-width: 814px;
+}
+
+.coop__text-set2 {
+    max-width: 836px;
+}
+
+.header__header-bottom__second-coop {
+    margin-bottom: 21px;
+}
+
+.top__tab-coop {
+    margin-bottom: 31px;
+}
+
+#coop__text-line1,
+#coop__text-line2,
+#coop__text-line3 {
+    line-height: 150%;
+}
+
+.coop__cap-coop {
+    margin-bottom: 18px;
+}
+
+@media (max-width: 600px) {
+    .coop__caption {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 100%;
+        color: #333333;
+        margin-bottom: 32px;
+    }
+    .coop__cap {
+        @include coop-cap600;
+    }
+    .coop__text {
+        @include coop-text600;
+    }
+    .coop__text-add600 {
+        max-width: 259px;
+    }
+    .header__header-bottom__second-coop {
+        margin-bottom: 31px;
+    }
+    .coop__cap320 {
+        font-size: 14px;
+    }
+    .coop__chap320 {
+        margin-bottom: 28px;
+    }
+    .coop__text-poss {
+        margin-bottom: 8px;
+    }
+    .coop__cap-coop {
+        margin-bottom: 10px;
+    }
+    .coop__img {
+        width: 36px;
+        height: 54px;
+        margin-right: 16px;
+    }
+    .coop__chap3 {
+        margin-bottom: 23px;
+    }
+}
